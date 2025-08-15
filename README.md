@@ -14,18 +14,19 @@ Shows drive times from your home to multiple destinations (Westfield, Ohm, Paint
 ### CalendarWidget
 Fetches and displays the next 5 upcoming events from your Google Calendar ("Gabe & Hannah" calendar) using a NoCodeAPI endpoint.
 
-## Setup
+## Local Setup
 1. Clone the repository.
 2. Run `npm install` to install dependencies.
 3. Run `npm run dev` to start the development server.
 4. Open your browser to the provided localhost URL.
 
+# Production Setup
+1. Run `npm run deploy:all` and then the app will be live at https://glidderdale.github.io/smart-mirror/
+
 ## Customization
 - Update API keys and calendar IDs in the widget components as needed.
 - Add or modify widgets in the `src/components` directory.
 
-## Deployment in Production
-1. Run `npm run build` to create a folder like dist/ with the production files.
 ---
 
 For more details, see the code in each widget component under `src/components/`.
