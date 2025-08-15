@@ -21,7 +21,8 @@ Fetches and displays the next 5 upcoming events from your Google Calendar ("Gabe
 4. Open your browser to the provided localhost URL.
 
 # Production Setup
-1. Run `npm run deploy:all` and then the app will be live at https://glidderdale.github.io/smart-mirror/
+1. Run `npm run deploy:all` to build and deploy the app to GitHub Pages.
+2. After deployment, your app will be live at: https://glidderdale.github.io/smart-mirror/
 
 ## Customization
 - Update API keys and calendar IDs in the widget components as needed.
