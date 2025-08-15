@@ -59,7 +59,7 @@ export default {
       }
       // Replace 'YOUR_API_KEY' with your OpenWeatherMap API key
       const apiKey = 'f22431912b6cf368ce89c2b75f132671';
-      const url = `http://api.openweathermap.org/data/2.5/forecast?id=5145476&appid=${apiKey}&units=imperial`;
+      const url = `https://api.openweathermap.org/data/2.5/forecast?id=5145476&appid=${apiKey}&units=imperial`;
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error('Weather fetch failed');
