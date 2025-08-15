@@ -24,6 +24,8 @@ Fetches and displays the next 5 upcoming events from your Google Calendar ("Gabe
 - Update API keys and calendar IDs in the widget components as needed.
 - Add or modify widgets in the `src/components` directory.
 
+## Deployment in Production
+1. Run `npm run build` to create a folder like dist/ with the production files.
 ---
 
 For more details, see the code in each widget component under `src/components/`.
