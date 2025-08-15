@@ -1,29 +1,29 @@
-# smart-mirror
 
-This template should help get you started developing with Vue 3 in Vite.
+# Smart Mirror
 
-## Recommended IDE Setup
+A customizable smart mirror web app built with Vue and Vite. This project features several widgets for real-time information display.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Widgets
 
-## Customize configuration
+### WeatherWidget
+Displays the current time, date, and live weather for Akron, Ohio. Weather updates every 30 minutes between 5am and 10pm.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### CommuteWidget
+Shows drive times from your home to multiple destinations (Westfield, Ohm, Painting) using Mapbox Directions API. Updates every 15 minutes between 6am and 10am.
 
-## Project Setup
+### CalendarWidget
+Fetches and displays the next 5 upcoming events from your Google Calendar ("Gabe & Hannah" calendar) using a NoCodeAPI endpoint.
 
-```sh
-npm install
-```
+## Setup
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm run dev` to start the development server.
+4. Open your browser to the provided localhost URL.
 
-### Compile and Hot-Reload for Development
+## Customization
+- Update API keys and calendar IDs in the widget components as needed.
+- Add or modify widgets in the `src/components` directory.
 
-```sh
-npm run dev
-```
+---
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+For more details, see the code in each widget component under `src/components/`.
