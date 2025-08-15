@@ -3,7 +3,7 @@
   <h2 class="time">{{ time }}</h2>
   <div class="date">{{ date }}</div>
     <h3 class="weather">
-      <span v-if="weatherLoaded">{{ temperature }}°F {{ description }}</span>
+  <span v-if="weatherLoaded"><img src="/icons/cloud-icon.png" alt="cloud icon" class="icon-weather" /> {{ temperature }}°F {{ description }}</span>
       <span v-else>Loading weather...</span>
     </h3>
     <h3 class="weather-city">Akron, Ohio</h3>
@@ -119,5 +119,13 @@ export default {
 .weather-city {
   font-size: 24px;
   margin-top: -20px;
+}
+.icon-weather {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1);
 }
 </style>

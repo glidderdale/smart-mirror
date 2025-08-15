@@ -1,7 +1,6 @@
 <template>
   <div class="commute-widget">
-    <h2 class="widget-title">Drive Times</h2>
-    <hr class="divider"></hr>
+  <h2 class="widget-title"><img src="/icons/car-icon.png" alt="car icon" class="icon-car" /> Drive Times</h2>
     <h3 class="route">
       Westfield:
       <span v-if="westfieldDriveTime">{{ westfieldDriveTime }}</span>
@@ -87,12 +86,10 @@ export default {
   color: #f5f5f5;
   padding-right: 35px;
 }
-
 .widget-title {
   font-size: 48px;
   font-weight: bold;
 }
-
 .divider {
   border: 1px solid #f5f5f5;
   width: 80%;
@@ -100,5 +97,14 @@ export default {
 }
 .route {
   font-size: 24px;
+}
+.icon-car {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 70px;
+  height: 70px;
+  margin-top: -5px;
+  filter: brightness(0) invert(1);
 }
 </style>

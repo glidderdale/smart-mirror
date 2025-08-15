@@ -1,6 +1,6 @@
 <template>
   <div class="calendar-widget">
-    <h2 class="day-of-week">Upcoming</h2>
+  <h2 class="day-of-week"><img src="/icons/calendar-icon.png" alt="calendar icon" class="icon-calendar" /> Upcoming</h2>
     <hr class="divider"></hr>
     <div v-if="loading">Loading events...</div>
     <div v-else-if="events.length === 0">No upcoming events.</div>
@@ -74,7 +74,6 @@ export default {
   color: #f5f5f5;
   padding-left: 35px;
 }
-
 .day-of-week {
   font-size: 48px;
   font-weight: bold;
@@ -86,5 +85,13 @@ export default {
 }
 .event {
   font-size: 24px;
+}
+.icon-calendar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+  filter: brightness(0) invert(1);
 }
 </style>
